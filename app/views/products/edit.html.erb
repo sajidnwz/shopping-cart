@@ -4,7 +4,7 @@
 		<h2><%= pluralize(@products.errors.count, "error") %>
 			prohibited this product from being saved:</h2>
 		<ul>
-		<% @product.errors.full_messages.each do |msg| %>
+		<% @products.errors.full_messages.each do |msg| %>
 		<li><%= msg %></li>
 		<% end %>
 		</ul>
